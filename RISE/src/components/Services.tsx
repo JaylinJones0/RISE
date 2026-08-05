@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import svgPaths from "@/imports/Services/svg-hv5faogkpj";
 import { IoHome } from "react-icons/io5";
 import { IoCashOutline } from "react-icons/io5";
@@ -92,12 +93,24 @@ const cards: CardProps[] = [
 export default function Services() {
   return (
     <div className="bg-[#f5f6fa] w-full flex flex-col gap-[32px] items-center px-[24px] md:px-[60px] lg:px-[100px] py-[60px] lg:py-[100px]">
-      <p className="capitalize font-['Sora:SemiBold',sans-serif] font-semibold leading-[56px] text-[#1b2260] text-[clamp(32px,5vw,48px)] tracking-[-1.5px] text-center">
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="capitalize font-['Sora:SemiBold',sans-serif] font-semibold leading-[56px] text-[#1b2260] text-[clamp(32px,5vw,48px)] tracking-[-1.5px] text-center"
+      >
         What we do
-      </p>
+      </motion.p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px] w-full">
-        {cards.map((card) => (
-          <ServiceCard key={card.title} {...card} />
+        {cards.map((card, index) => (
+          <motion.div
+            key={card.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
+          >
+            <ServiceCard {...card} />
+          </motion.div>
         ))}
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const plusPath =
   "M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z";
@@ -41,6 +42,27 @@ const faqs: FaqItem[] = [
   },
 ];
 
+const headingContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.04,
+    },
+  },
+};
+
+const headingLetter = {
+  hidden: { y: 0, opacity: 0 },
+  show: {
+    y: [0, -12, 0],
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
 function FaqCard({ item, open, onToggle }: { item: FaqItem; open: boolean; onToggle: () => void }) {
   return (
     <button
@@ -79,9 +101,22 @@ export default function Faq() {
 
   return (
     <div className="bg-[#f5f6fa] w-full flex flex-col gap-[40px] items-center px-[24px] md:px-[60px] lg:px-[100px] py-[60px] lg:py-[100px]">
-      <p className="capitalize font-['Sora:SemiBold',sans-serif] font-semibold leading-[56px] text-[#1b2260] text-[clamp(32px,5vw,48px)] tracking-[-1.5px] text-center">
-        Common Questions
-      </p>
+      <motion.p
+        className="capitalize font-['Sora:SemiBold',sans-serif] font-semibold leading-[56px] text-[#1b2260] text-[clamp(32px,5vw,48px)] tracking-[-1.5px] text-center"
+        variants={headingContainer}
+        initial="hidden"
+        whileInView="show"
+      >
+        {"Common Questions".split("").map((char, index) => (
+          <motion.span
+            key={index}
+            variants={headingLetter}
+            style={{ display: "inline-block" }}
+          >
+            {char === " " ? "\u00A0" : char}
+          </motion.span>
+        ))}
+      </motion.p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[16px] w-full">
         <div className="flex flex-col gap-[16px]">
