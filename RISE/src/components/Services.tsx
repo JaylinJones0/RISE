@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import svgPaths from "@/imports/Services/svg-hv5faogkpj";
-
+import { IoHome } from "react-icons/io5";
+import { IoCashOutline } from "react-icons/io5";
+import { IoChatbubbles } from "react-icons/io5";
+import { IoHelpCircle } from "react-icons/io5";
+import { IoLockClosed } from "react-icons/io5";
 interface CardProps {
   icon: React.ReactNode;
   title: string;
@@ -26,8 +30,8 @@ function ServiceCard({ icon, title, description }: CardProps) {
 const cards: CardProps[] = [
   {
     icon: (
-      <svg className="size-full" fill="none" viewBox="0 0 53.3333 53.3333">
-        <path d={svgPaths.p127a1700} fill="#4351D6" />
+      <svg className="size-40" fill="none" viewBox="0 0 53.3333 53.3333" color="#020c69">
+        <IoHome />
       </svg>
     ),
     title: "Retirement Income Planning",
@@ -36,8 +40,8 @@ const cards: CardProps[] = [
   },
   {
     icon: (
-      <svg className="size-full" fill="none" viewBox="0 0 53.2807 47.0571">
-        <path d={svgPaths.pd809980} fill="#4351D6" />
+      <svg className="size-40" fill="none" viewBox="0 0 53.2807 47.0571" color="#020c69">
+        <IoCashOutline />
       </svg>
     ),
     title: "Tax-Aware Strategy",
@@ -46,8 +50,8 @@ const cards: CardProps[] = [
   },
   {
     icon: (
-      <svg className="size-full" fill="none" viewBox="0 0 53.3333 42.6635">
-        <path d={svgPaths.p24b0be80} fill="#4351D6" />
+      <svg className="size-43" fill="none" viewBox="0 0 53.3333 42.6635" color="#020c69">
+        <IoHelpCircle />
       </svg>
     ),
     title: "Rollover Guidance",
@@ -56,8 +60,8 @@ const cards: CardProps[] = [
   },
   {
     icon: (
-      <svg className="size-full" fill="none" viewBox="0 0 53.3333 53.3558">
-        <path d={svgPaths.p1dfe5e80} fill="#4351D6" />
+      <svg className="size-40" fill="none" viewBox="0 0 53.3333 42.6635" color="#020c69">
+        <IoChatbubbles />
       </svg>
     ),
     title: "Legacy & Estate Concepts",
@@ -66,8 +70,8 @@ const cards: CardProps[] = [
   },
   {
     icon: (
-      <svg className="size-full" fill="none" viewBox="0 0 53.3333 53.3333">
-        <path d={svgPaths.p110893f1} fill="#4351D6" />
+      <svg className="size-40" fill="none" viewBox="0 0 53.3333 53.3333">
+        <IoLockClosed color="#020c69"/>
       </svg>
     ),
     title: "Protection Planning",
@@ -76,8 +80,8 @@ const cards: CardProps[] = [
   },
   {
     icon: (
-      <svg className="size-full" fill="none" viewBox="0 0 53.3333 53.3333">
-        <path d={svgPaths.p127a1700} fill="#4351D6" />
+      <svg className="size-40" fill="none" viewBox="0 0 53.3333 53.3333" color="#020c69">
+        <IoHome />
       </svg>
     ),
     title: "Ongoing Guidance",
