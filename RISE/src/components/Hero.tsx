@@ -19,9 +19,9 @@ function Logo() {
 function NavLinks() {
   return (
     <div className="hidden md:flex gap-[40px] items-center">
-      <p className="font-['Sora:SemiBold',sans-serif] font-semibold text-[#1b2260] text-[18px] leading-[24px] whitespace-nowrap">Home</p>
+      {/* <p className="font-['Sora:SemiBold',sans-serif] font-semibold text-[#1b2260] text-[18px] leading-[24px] whitespace-nowrap">Home</p>
       <p className="font-['Sora:Regular',sans-serif] font-normal text-[#1b2260] text-[18px] leading-[32px] whitespace-nowrap">About</p>
-      <p className="font-['Sora:Regular',sans-serif] font-normal text-[#1b2260] text-[18px] leading-[32px] whitespace-nowrap">Services</p>
+      <p className="font-['Sora:Regular',sans-serif] font-normal text-[#1b2260] text-[18px] leading-[32px] whitespace-nowrap">Services</p> */}
     </div>
   );
 }
