@@ -1,6 +1,8 @@
 import svgPaths from "../imports/Hero/svg-avke5obcmk";
 import imgLogo from "@/imports/Hero/2ea1506f6486cc3431889382d2f018b45bec8dd6.png";
 import imgHero from "@/imports/Hero/051a1ede11f9102907a2188205e084d0b7887011.png";
+import { IoCall } from "react-icons/io5";
+
 
 function Logo() {
   return (
@@ -71,10 +73,8 @@ function HeroContent() {
             >
               Schedule Your Consultation
             </a>
-            <div className="shrink-0 size-[20px] overflow-clip">
-              <svg className="size-full" fill="none" viewBox="0 0 16.6676 16.6619">
-                <path d={svgPaths.p363da880} fill="#1B2260" stroke="#132334" />
-              </svg>
+            <div className="shrink-0 size-[19px] overflow-clip">
+              <IoCall className="size-full" />
             </div>
           </div>
         </div>
