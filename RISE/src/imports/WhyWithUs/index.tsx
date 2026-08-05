@@ -12,7 +12,7 @@ function Heading() {
 
 function ListWhyUs() {
   return (
-    <div className="content-stretch flex flex-col md:flex-row gap-[24px] items-start w-full" data-name="List Why Us">
+    <div className="content-stretch flex flex-col md:flex-row gap-[50px] items-start w-full" data-name="List Why Us">
       <motion.div className="md:w-[492px] w-full h-[586px] relative rounded-[16px] shrink-0">
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[16px]">
           <img alt="" className="absolute h-full left-[-9.59%] max-w-none top-[0.00%] w-[119.11%] object-cover" src={imgRectangle695} />
