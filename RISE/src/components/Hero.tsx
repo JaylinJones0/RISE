@@ -3,7 +3,6 @@ import imgLogo from "@/imports/Hero/2ea1506f6486cc3431889382d2f018b45bec8dd6.png
 import imgHero from "@/imports/Hero/051a1ede11f9102907a2188205e084d0b7887011.png";
 import { IoCall } from "react-icons/io5";
 
-
 function Logo() {
   return (
     <div className="h-[70px] relative shrink-0 w-[74px] md:h-[93px] md:w-[98px]">
@@ -47,11 +46,11 @@ function NavCTA() {
 
 function HeroContent() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-[40px] w-full px-[24px] md:px-[60px] lg:px-[100px] py-[40px]">
+    <div className="mx-auto flex w-full max-w-[1400px] flex-col items-center justify-center gap-[48px] px-[24px] py-[40px] md:gap-[56px] md:px-[60px] lg:flex-row lg:gap-[72px] lg:px-[100px] lg:py-[56px]">
       {/* Left: text */}
-      <div className="flex flex-col gap-[32px] items-start w-full lg:max-w-[600px]">
-        <div className="flex flex-col gap-[16px] items-start w-full">
-          <div className="bg-[#f5f6fa] rounded-[128px] px-[12px] py-[8px]">
+      <div className="flex w-full flex-col items-start gap-[40px] lg:max-w-[600px]">
+        <div className="flex w-full flex-col items-start gap-[16px]">
+          <div className="rounded-[128px] bg-[#f5f6fa] px-[12px] py-[8px]">
             <p className="font-['Sora:SemiBold',sans-serif] font-semibold text-[#1baeb4] text-[14px] md:text-[16px] leading-[22px] whitespace-nowrap">
               REPOSITION. PROTECT. BUILD.
             </p>
@@ -63,8 +62,8 @@ function HeroContent() {
             RISE Financial Strategies helps you turn a lifetime of work into a retirement built on clarity, confidence, and faith. No guesswork involved.
           </p>
         </div>
-        <div className="bg-[#8dc63f] rounded-[128px]">
-          <div className="flex gap-[8px] items-center px-[20px] py-[12px]">
+        <div className="rounded-[128px] bg-[#8dc63f]">
+          <div className="flex items-center gap-[8px] px-[20px] py-[12px]">
             <a
               className="font-['Sora:SemiBold',sans-serif] font-semibold text-[#132334] text-[16px] leading-[22px] whitespace-nowrap no-underline"
               href="https://bit.ly/pamala-burch-booking"
@@ -73,7 +72,7 @@ function HeroContent() {
             >
               Schedule Your Consultation
             </a>
-            <div className="shrink-0 size-[19px] overflow-clip">
+            <div className="size-[19px] shrink-0 overflow-clip">
               <IoCall className="size-full" />
             </div>
           </div>
@@ -81,7 +80,7 @@ function HeroContent() {
       </div>
 
       {/* Right: image */}
-      <div className="relative rounded-[16px] overflow-hidden w-full max-w-[492px] h-[360px] md:h-[500px] lg:h-[605px] shrink-0">
+      <div className="relative h-[360px] w-full max-w-[492px] shrink-0 overflow-hidden rounded-[16px] md:h-[500px] lg:h-[605px]">
         <img
           alt="RISE Financial Strategies"
           className="absolute h-full left-[-9.59%] max-w-none top-[0.02%] w-[119.11%] object-cover"
@@ -97,7 +96,7 @@ export default function Hero() {
     <div className="bg-[#f5f6fa] flex flex-col items-start w-full">
       {/* Nav */}
       <div className="drop-shadow-[0px_6px_15px_rgba(149,149,149,0.04)] w-full">
-        <div className="flex items-center justify-between px-[24px] md:px-[60px] lg:px-[100px] py-[16px]">
+        <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between gap-[24px] px-[24px] py-[16px] md:px-[60px] lg:px-[100px]">
           <Logo />
           <NavLinks />
           <NavCTA />
