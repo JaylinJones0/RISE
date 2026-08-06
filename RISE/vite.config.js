@@ -65,7 +65,7 @@ function figmaSiteConfiguration(config) {
     return html.replace(`<!-- ${slotName} -->`, content)
   }
 
-  const title = config.title ?? 'Figma Make App'
+  const title = config.title ?? 'RISE'
   const description = config.description ?? ''
   const favicon = config.icons?.icon ?? ''
   const socialImage = config.openGraph?.image ?? ''
