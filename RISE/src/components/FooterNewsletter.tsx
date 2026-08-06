@@ -1,6 +1,6 @@
 import svgPaths from "@/imports/FooterNewsletter/svg-5equmreevf";
 import imgLogo from "@/imports/FooterNewsletter/2ea1506f6486cc3431889382d2f018b45bec8dd6.png";
-
+import { IoCall } from "react-icons/io5";
 function Newsletter() {
   return (
     <div className="bg-[#132334] rounded-[16px] w-full p-[32px] flex flex-col sm:flex-row gap-[24px] items-start sm:items-end justify-between">
@@ -24,8 +24,8 @@ function Newsletter() {
             Schedule Your Consultation
           </a>
           <div className="overflow-clip shrink-0 size-[20px]">
-            <svg className="size-full" fill="none" viewBox="0 0 16.6676 16.6619">
-              <path d={svgPaths.p363da880} fill="#171717" stroke="#1B2260" />
+            <svg className="size-[19px]" fill="none" viewBox="0 0 16.6676 16.6619">
+              <IoCall />
             </svg>
           </div>
         </div>
@@ -72,58 +72,79 @@ function FooterInfo() {
           <div className="flex gap-[12px] items-center">
             {/* Instagram */}
             <SocialIcon>
-              <div className="h-[36px] overflow-clip relative shrink-0 w-[37px]">
-                <div className="absolute inset-[0_0.06%_0.02%_0]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="35.993" preserveAspectRatio="none" viewBox="0 0 36.9783 35.993" width="36.9783">
-                    <path d={svgPaths.p9723400} fill="#000100" />
-                  </svg>
+              <a
+                href="https://www.threads.com/@r.i.s.e.pamala?xmt=AQG0sZMfR-lX_vgPW9OaijG0nN-23SDal7iwZrCcl8Mt99w&hwta=1&http_ref=eyJ0cyI6MTc4NTk3NTY1MTAwMCwiciI6IiJ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative h-[28px] w-[28px] shrink-0 overflow-hidden">
+                  <div className="absolute inset-[0_0.06%_0.02%_0]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="35.993" preserveAspectRatio="none" viewBox="0 0 36.9783 35.993" width="36.9783">
+                      <path link="https://www.threads.com/@r.i.s.e.pamala?xmt=AQG0sZMfR-lX_vgPW9OaijG0nN-23SDal7iwZrCcl8Mt99w&hwta=1&http_ref=eyJ0cyI6MTc4NTk3NTY1MTAwMCwiciI6IiJ9" d={svgPaths.p9723400} fill="#000100" />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-[24.32%]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="18.4922" preserveAspectRatio="none" viewBox="0 0 19.0059 18.4922" width="19.0059">
+                      <path d={svgPaths.p18606400} fill="#000100" />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-[17.3%_17.3%_70.7%_70.7%]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="4.31719" preserveAspectRatio="none" viewBox="0 0 4.43711 4.31719" width="4.43711">
+                      <path d={svgPaths.p2b3cb800} fill="#000100" />
+                    </svg>
+                  </div>
                 </div>
-                <div className="absolute inset-[24.32%]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="18.4922" preserveAspectRatio="none" viewBox="0 0 19.0059 18.4922" width="19.0059">
-                    <path d={svgPaths.p18606400} fill="#000100" />
-                  </svg>
-                </div>
-                <div className="absolute inset-[17.3%_17.3%_70.7%_70.7%]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="4.31719" preserveAspectRatio="none" viewBox="0 0 4.43711 4.31719" width="4.43711">
-                    <path d={svgPaths.p2b3cb800} fill="#000100" />
-                  </svg>
-                </div>
-              </div>
+              </a>
             </SocialIcon>
             {/* Facebook */}
             <SocialIcon>
-              <div className="h-[26px] overflow-clip relative shrink-0 w-[28px]">
-                <div className="absolute inset-[0_0_0.37%_0]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="25.9048" preserveAspectRatio="none" viewBox="0 0 28.0006 25.9048" width="28.0006">
-                    <path d={svgPaths.p390bed40} fill="#132334" />
-                  </svg>
+              <a
+                href="https://www.facebook.com/Ms.PYB/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative h-[28px] w-[28px] shrink-0 overflow-hidden">
+                  <div className="absolute inset-[0_0_0.37%_0]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="25.9048" preserveAspectRatio="none" viewBox="0 0 28.0006 25.9048" width="28.0006">
+                      <path d={svgPaths.p390bed40} fill="#132334" />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-[18.51%_26.8%_0_27.61%]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="21.1874" preserveAspectRatio="none" viewBox="0 0 12.7652 21.1874" width="12.7652">
+                      <path d={svgPaths.p28e00240} fill="white" />
+                    </svg>
+                  </div>
                 </div>
-                <div className="absolute inset-[18.51%_26.8%_0_27.61%]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="21.1874" preserveAspectRatio="none" viewBox="0 0 12.7652 21.1874" width="12.7652">
-                    <path d={svgPaths.p28e00240} fill="white" />
-                  </svg>
-                </div>
-              </div>
+              </a>
             </SocialIcon>
             {/* TikTok */}
             <SocialIcon>
-              <div className="relative shrink-0 size-[26px]">
-                <div className="absolute inset-[4%_5.61%_0_19.67%]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="24.96" preserveAspectRatio="none" viewBox="0 0 19.4269 24.96" width="19.4269">
-                    <path d={svgPaths.p24b94b00} fill="#132334" fillOpacity="0.5" />
-                  </svg>
+              <a
+                href="https://www.tiktok.com/@protectwithpamala"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative h-[28px] w-[28px] shrink-0 overflow-hidden">
+                  <div className="absolute inset-[4%_5.61%_0_19.67%]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="24.96" preserveAspectRatio="none" viewBox="0 0 19.4269 24.96" width="19.4269">
+                      <path d={svgPaths.p24b94b00} fill="#132334" fillOpacity="0.5" />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-[4%_10.41%_4%_11.04%]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="23.92" preserveAspectRatio="none" viewBox="0 0 20.4237 23.92" width="20.4237">
+                      <path d={svgPaths.p102de100} fill="#132334" />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-[0_10.41%_9.14%_6.25%]">
+                    <svg className="absolute block inset-0 size-full" fill="none" height="23.6242" preserveAspectRatio="none" viewBox="0 0 21.6694 23.6242" width="21.6694">
+                      <path d={svgPaths.p21dab800} fill="#132334" />
+                    </svg>
+                  </div>
                 </div>
-                <div className="absolute inset-[4%_10.41%_4%_11.04%]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="23.92" preserveAspectRatio="none" viewBox="0 0 20.4237 23.92" width="20.4237">
-                    <path d={svgPaths.p102de100} fill="#132334" />
-                  </svg>
-                </div>
-                <div className="absolute inset-[0_10.41%_9.14%_6.25%]">
-                  <svg className="absolute block inset-0 size-full" fill="none" height="23.6242" preserveAspectRatio="none" viewBox="0 0 21.6694 23.6242" width="21.6694">
-                    <path d={svgPaths.p21dab800} fill="#132334" />
-                  </svg>
-                </div>
-              </div>
+              </a>
             </SocialIcon>
           </div>
         </div>
