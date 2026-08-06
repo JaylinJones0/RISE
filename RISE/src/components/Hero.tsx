@@ -30,7 +30,7 @@ function NavLinks() {
 function NavCTA() {
   return (
     <div className="bg-[#8dc63f] rounded-[128px] border border-[#ddd]">
-      <div className="flex items-center justify-center px-[20px] py-[12px]">
+      <div className="flex items-center justify-center px-[20px] py-[12px] gap-[8px]">
         <a
           className="font-['Sora:SemiBold',sans-serif] font-semibold text-[#1b2260] text-[14px] md:text-[16px] leading-[22px] whitespace-nowrap no-underline"
           href="https://bit.ly/pamala-burch-booking"
@@ -39,6 +39,9 @@ function NavCTA() {
         >
           Schedule Your Consultation
         </a>
+        <svg className="size-[19px]" fill="none" viewBox="0 0 16.6676 16.6619">
+              <IoCall />
+            </svg>
       </div>
     </div>
   );
